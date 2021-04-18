@@ -199,8 +199,8 @@ public class ItemUserService implements SuperUserService {
         if (this.itemServicePublish.isEmpty()) {
             System.err.println(Common.NO_ITEMS_FOUND_IN_DB);
 //            System.err.println("Item DB is empty, no items to be listed.");
-            this.itemServicePublish.addItem(new Item(0, "Intel Core i7 CPU", new BigDecimal(65000), 25));
-            this.itemServicePublish.addItem(new Item(0, "AMD Athlon Silver 3050u", new BigDecimal(55000), 14));
+//            this.itemServicePublish.addItem(new Item(0, "Intel Core i7 CPU", new BigDecimal(65000), 25));
+//            this.itemServicePublish.addItem(new Item(0, "AMD Athlon Silver 3050u", new BigDecimal(55000), 14));
         } else {
             /* "\n*** Item details ***" */
             System.out.println(Dividers.ITEM_DETAILS);

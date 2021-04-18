@@ -156,8 +156,8 @@ public class CustomerUserService implements SuperUserService {
             this.customerServicePublish.findCustomers().forEach(System.out::println);
         } else {
             System.err.println(Common.NO_CUSTOMERS_FOUND_IN_DB);
-            this.customerServicePublish.addCustomer(new Customer(0, "Dhanusha Perera", "0751234567"));
-            this.customerServicePublish.addCustomer(new Customer(0, "Sachintha De Zoysa", "0112933445"));
+//            this.customerServicePublish.addCustomer(new Customer(0, "Dhanusha Perera", "0751234567"));
+//            this.customerServicePublish.addCustomer(new Customer(0, "Sachintha De Zoysa", "0112933445"));
         }
     }
 
