@@ -5,6 +5,7 @@ import org.osgi.framework.BundleContext;
 
 public interface SuperUserService {
 
+    // setter
     void setBundleContext(BundleContext context);
 
     void add();

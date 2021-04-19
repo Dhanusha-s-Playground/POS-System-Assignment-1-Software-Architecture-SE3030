@@ -22,7 +22,7 @@ public class UserServiceActivator implements BundleActivator {
     public void start(BundleContext context) throws Exception {
         System.out.println(ServiceLifeCycle.LIFT_CYCLE_STARTED);
 
-        /* share bundleContext */
+         /* share bundleContext */
         itemUserService.setBundleContext(context);
         customerUserService.setBundleContext(context);
         orderUserService.setBundleContext(context);
@@ -55,7 +55,7 @@ public class UserServiceActivator implements BundleActivator {
                     break;
 
 
-                /* ITEM */
+//                 ITEM
                 case InputTypes.ADD_ITEM:
                     this.itemUserService.add();
                     break;
@@ -76,7 +76,7 @@ public class UserServiceActivator implements BundleActivator {
                     break;
 
 
-                /* ORDERS */
+//                 ORDERS
                 case InputTypes.ADD_ORDER:
                     this.orderUserService.add();
                     break;
@@ -98,7 +98,7 @@ public class UserServiceActivator implements BundleActivator {
                     break;
 
 
-                /* ORDER DETAIL */
+//                 ORDER DETAIL
 //                case InputTypes.ADD_ORDER_DETAIL:
 //                    printNotYetImplemented();
 //                    break;
@@ -126,7 +126,6 @@ public class UserServiceActivator implements BundleActivator {
 //            e.printStackTrace();
             System.err.println(ValidationPrompts.INVALID_INPUT_ONLY_INTEGERS);
         }
-
     }
 
     @Override

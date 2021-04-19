@@ -217,12 +217,12 @@ public class CustomerUserService implements SuperUserService {
             System.out.println(Common.NEXT_LINE + Instructions.ENTER_CUSTOMER_NAME);
             this.userInput = scanner.nextLine();
 
-            if (!this.userInput.matches("^[A-Za-z]*+[\\w .]*$")) {
+            if (!this.userInput.matches("^[A-Za-z]{1,}+[\\w .]*$")) {
                 /* "Customer name should be only contain letters (space and underscore valid)." */
                 System.err.println(ValidationPrompts.CUSTOMER_NAME_INVALID);
             }
 
-        } while (!this.userInput.matches("^[A-Za-z]*+[\\w .]*$"));
+        } while (!this.userInput.matches("^[A-Za-z]{1,}+[\\w .]*$"));
 
         this.customer.setName(this.userInput);
     }
